@@ -1,4 +1,9 @@
 {
+    "key_properties": [
+        "employee_id",
+        "counter_date",
+        "location"
+    ],
     "properties":
         {
             "counter_date": {"type": "string", "format": "date-time"},

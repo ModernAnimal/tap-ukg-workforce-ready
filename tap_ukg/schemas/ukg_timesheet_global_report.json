@@ -1,4 +1,9 @@
 {
+    "key_properties": [
+        "employee_id",
+        "counter_date",
+        "counter_name"
+    ],
     "properties": {
         "employee_id": {"type": "string"},
         "first_name": {"type": "string"},
