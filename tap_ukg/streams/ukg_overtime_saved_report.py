@@ -9,9 +9,9 @@ from tap_ukg.streams.api import get_saved_report
 SAVED_REPORT_ID = 879114
 
 
-def stream(api_key, company, username, password):
+def stream(company, token):
     """Stream data from tap source"""
-    data = get_saved_report(SAVED_REPORT_ID, api_key, company, username, password)
+    data = get_saved_report(SAVED_REPORT_ID, company, token)
 
     if data:
         # Write the records to the stream

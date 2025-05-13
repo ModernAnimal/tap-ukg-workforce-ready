@@ -56,6 +56,13 @@ def discover():
 
 def sync(config, state, catalog):
     """Sync data from tap source"""
+    # Get auth token
+    auth_token = tap_ukg.streams.api.get_auth_token(
+        config["api_key"],
+        config["username"],
+        config["password"],
+        config["company"],
+    )
 
     # Loop over selected streams in catalog
     for stream in catalog.streams:
@@ -67,10 +74,8 @@ def sync(config, state, catalog):
             key_properties=stream.key_properties,
         )
         getattr(tap_ukg.streams, stream.tap_stream_id).stream(
-            api_key=config["api_key"],
-            username=config["username"],
-            password=config["password"],
             company=config["company"],
+            token=auth_token,
         )
 
     return

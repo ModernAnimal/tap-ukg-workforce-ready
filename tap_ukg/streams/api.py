@@ -68,8 +68,7 @@ def csv_to_clean_json(content):
     return json_data
 
 
-def get_saved_report(saved_report_id, api_key, username, password, company):
-    token = get_auth_token(api_key, username, password, company)
+def get_saved_report(saved_report_id, company, token):
     resp = httpx.get(
         url=V1_URL + f"report/saved/{saved_report_id}?company={company}",
         headers=BASE_HEADERS | {"Authorization": "Bearer " + token},
@@ -85,8 +84,7 @@ def get_saved_report(saved_report_id, api_key, username, password, company):
         return None
 
 
-def post_global_report(report_id, request_body, api_key, username, password, company):
-    token = get_auth_token(api_key, username, password, company)
+def post_global_report(report_id, request_body, token):
     resp = httpx.post(
         url=V1_URL + f"report/global/{report_id}",
         headers=BASE_HEADERS | {"Authorization": "Bearer " + token},

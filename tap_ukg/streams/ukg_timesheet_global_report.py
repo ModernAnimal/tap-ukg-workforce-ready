@@ -9,7 +9,7 @@ from tap_ukg.streams.api import post_global_report
 GLOBAL_REPORT_ID = "REPORT_CALCULATED_TIME_TA_COUNTER_DETAILED"
 
 
-def stream(api_key, company, username, password):
+def stream(company, token):
     """Stream data from tap source"""
     request_body = {
         "company": {
@@ -29,10 +29,7 @@ def stream(api_key, company, username, password):
     data = post_global_report(
         GLOBAL_REPORT_ID,
         request_body,
-        api_key,
-        username,
-        password,
-        company
+        token
     )
 
     if data:
