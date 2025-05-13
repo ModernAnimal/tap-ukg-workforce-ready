@@ -1,4 +1,7 @@
 {
+    "key_properties": [
+        "employee_id"
+    ],
     "properties": {
         "employee_id": {"type": "string"},
         "badge": {"type": "number"},
