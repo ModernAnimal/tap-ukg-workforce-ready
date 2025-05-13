@@ -1,0 +1,18 @@
+{
+    "properties": {
+        "employee_id": {"type": "string"},
+        "badge": {"type": "number"},
+        "first_name": {"type": "string"},
+        "last_name": {"type": "string"},
+        "employee_status": {"type": "string"},
+        "dvm_number_of_weekly_shifts": {"type": "string"},
+        "company_code": {"type": "string"},
+        "primary_email": {"type": "string"},
+        "holiday_profile": {"type": "string"},
+        "pay_period_profile": {"type": "string"},
+        "accrual_profile": {"type": "string"},
+        "cost_center": {"type": "string"},
+        "dvm_pto_industry_experience_date": {"type": "string", "format": "date-time"},
+        "relief_shift_base_rate": {"type": "string"}
+    }
+}

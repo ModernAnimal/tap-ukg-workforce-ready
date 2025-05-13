@@ -172,3 +172,15 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Custom stuff
+env.sh
+config.json
+.autoenv.zsh
+
+rsa-key
+tags
+singer-check-tap-data
+state.json
+
+sample_config.json

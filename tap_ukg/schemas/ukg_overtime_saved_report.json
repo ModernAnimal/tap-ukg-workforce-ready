@@ -1,0 +1,13 @@
+{
+    "properties":
+        {
+            "counter_date": {"type": "string", "format": "date-time"},
+            "location": {"type": "string"},
+            "employee_id": {"type": "string"},
+            "last_first_name": {"type": "string"},
+            "counter_name": {"type": "string"},
+            "counter_hours": {"type": "string"},
+            "pay_group": {"type": "string"},
+            "overtime_pay": {"type": "string"}
+        }
+}
