@@ -34,7 +34,7 @@ def discover():
     streams = []
     for stream_id, schema in raw_schemas.items():
         stream_metadata = []
-        key_properties = []
+        key_properties = ["id"]
         streams.append(
             CatalogEntry(
                 tap_stream_id=stream_id,
