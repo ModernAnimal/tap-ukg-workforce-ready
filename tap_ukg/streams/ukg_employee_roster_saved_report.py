@@ -6,7 +6,7 @@ import singer
 from tap_ukg.streams.api import get_saved_report
 
 
-SAVED_REPORT_ID = 873720
+SAVED_REPORT_ID = 896340
 
 
 def stream(company, token):
