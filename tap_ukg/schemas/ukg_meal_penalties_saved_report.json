@@ -8,6 +8,7 @@
         {
             "counter_date": {"type": "string", "format": "date-time"},
             "location": {"type": "string"},
+            "cost_center": {"type": "string"},
             "employee_id": {"type": "string"},
             "last_first_name": {"type": "string"},
             "counter_name": {"type": "string"},

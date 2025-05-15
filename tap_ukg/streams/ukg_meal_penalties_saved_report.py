@@ -21,6 +21,7 @@ def stream(company, token):
                 {
                     "counter_date": record.get("Counter Date"),
                     "location": record.get("Location(1)"),
+                    "cost_center": record.get("Default Cost Center Full Path"),
                     "employee_id": record.get("Employee Id"),
                     "last_first_name": record.get("Last, First Name"),
                     "counter_name": record.get("Counter Name"),
