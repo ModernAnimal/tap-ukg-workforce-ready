@@ -21,7 +21,7 @@ def stream(company, token):
                 "parameters": {
                     "RangeType": "1",
                     "CalendarType": "40",
-                    "CalendarNDays": "183"
+                    "CalendarNDays": "365"
                 }
             }
         ]
