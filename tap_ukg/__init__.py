@@ -102,6 +102,10 @@ def main():
             catalog = discover()
         sync(args.config, args.state, catalog)
 
+        # Emit dummy STATE to satisfy Singer target expectations
+        dummy_state = {"bookmarks": {}}
+        singer.write_state(dummy_state)
+
 
 if __name__ == "__main__":
     main()
