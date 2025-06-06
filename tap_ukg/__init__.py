@@ -83,6 +83,10 @@ def sync(config, state, catalog):
             token=auth_token,
         )
 
+        # Emit dummy STATE to satisfy Singer target expectations
+        dummy_state = {"bookmarks": {}}
+        singer.write_state(dummy_state)
+
     return
 
 
@@ -101,10 +105,6 @@ def main():
         else:
             catalog = discover()
         sync(args.config, args.state, catalog)
-
-        # Emit dummy STATE to satisfy Singer target expectations
-        dummy_state = {"bookmarks": {}}
-        singer.write_state(dummy_state)
 
 
 if __name__ == "__main__":
