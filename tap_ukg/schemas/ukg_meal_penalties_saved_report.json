@@ -2,6 +2,7 @@
     "key_properties": [
         "employee_id",
         "counter_date",
+        "counter_name",
         "location"
     ],
     "properties":
