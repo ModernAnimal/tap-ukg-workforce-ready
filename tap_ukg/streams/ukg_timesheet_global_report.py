@@ -20,8 +20,8 @@ def stream(company, token):
                 "name": "TACounterRecordDate",
                 "parameters": {
                     "RangeType": "2",
-                    "FromDate": "2025-04-01",
-                    "ToDate": "2025-05-07"
+                    "FromDate": "2025-01-01",
+                    "ToDate": "2025-03-31"
                 }
             }
         ]
