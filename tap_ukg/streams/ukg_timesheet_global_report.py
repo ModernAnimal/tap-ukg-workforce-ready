@@ -19,9 +19,9 @@ def stream(company, token):
             {
                 "name": "TACounterRecordDate",
                 "parameters": {
-                    "RangeType": "1",
-                    "CalendarType": "40",
-                    "CalendarNDays": "30"
+                    "RangeType": "2",
+                    "FromDate": "2025-04-01",
+                    "ToDate": "2025-05-07"
                 }
             }
         ]
