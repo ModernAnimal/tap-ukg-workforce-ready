@@ -1,0 +1,21 @@
+{
+    "key_properties": [
+        "employee_id",
+        "date_requested",
+        "last_date_requested",
+        "time_off_type"
+    ],
+    "properties": {
+        "employee_id": {"type": "string"},
+        "first_name": {"type": "string"},
+        "last_name": {"type": "string"},
+        "company_code": {"type": "string"},
+        "date_requested": {"type": "string"},
+        "last_date_requested": {"type": "string"},
+        "total_hours": {"type": ["number", "null"]},
+        "time_off_type": {"type": "string"},
+        "request_state": {"type": "string"},
+        "workflow_status": {"type": "string"},
+        "date_request_submitted": {"type": "string"}
+    }
+}
