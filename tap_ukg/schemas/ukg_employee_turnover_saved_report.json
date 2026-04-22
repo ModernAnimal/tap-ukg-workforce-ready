@@ -1,0 +1,17 @@
+{
+    "key_properties": [
+        "employee_id"
+    ],
+    "properties": {
+        "employee_id": {"type": "string"},
+        "first_name": {"type": "string"},
+        "last_name": {"type": "string"},
+        "employee_status": {"type": "string"},
+        "date_terminated": {"type": ["string", "null"], "format": "date"},
+        "date_hired": {"type": "string", "format": "date"},
+        "cost_center": {"type": "string"},
+        "default_cost_center": {"type": "string"},
+        "default_job": {"type": "string"},
+        "company_system_id": {"type": "number"}
+    }
+}
