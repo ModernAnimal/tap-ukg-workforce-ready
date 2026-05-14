@@ -1,4 +1,3 @@
-import csv
 import httpx
 import logging
 
@@ -18,7 +17,7 @@ def stream(company, token):
         # Write the records to the stream
         for record in data:
             singer.write_record(
-                "ukg_planned_time_off_saved_report",
+                "ukg_accrual_detail_saved_report",
                 {
                     "employee_id": record.get("Employee Id"),
                     "badge": record.get("Badge"),
