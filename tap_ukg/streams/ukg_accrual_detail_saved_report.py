@@ -6,7 +6,7 @@ import singer
 from tap_ukg.streams.api import get_saved_report
 
 
-SAVED_REPORT_ID = 896338
+SAVED_REPORT_ID = 1007761450
 
 
 def stream(company, token):
@@ -20,22 +20,18 @@ def stream(company, token):
                 "ukg_accrual_detail_saved_report",
                 {
                     "employee_id": record.get("Employee Id"),
+                    "badge": record.get("Badge"),
                     "first_name": record.get("First Name"),
                     "last_name": record.get("Last Name"),
-                    "last_first_name": record.get("Last, First Name"),
-                    "pay_group": record.get("Pay Group(1)"),
-                    "counter_date": record.get("Counter Date"),
-                    "counter_hours": record.get("Counter Hours"),
-                    "counter_quantity": record.get("Counter\u00a0Quantity"),
-                    "counter_name": record.get("Counter Name"),
-                    "counter_description": record.get("Counter Description"),
-                    "counter_code": record.get("Counter Code"),
-                    "cost_center_full_path": record.get(" Cost Center Full Path"),
-                    "teams_full_path": record.get(" Teams Full Path"),
-                    "job_full_path": record.get(" Job Full Path"),
-                    "time_off_name": record.get("Time Off Name"),
-                    "primary_email": record.get("Primary Email"),
-                    "accrual_profile": record.get("Accrual Profile")
+                    "in_payroll": record.get("In Payroll"),
+                    "locked": record.get("Locked"),
+                    "employee_status": record.get("Employee Status"),
+                    "time_off": record.get("TimeOff"),
+                    "transaction_type": record.get("Transaction Type"),
+                    "hours_authorized": record.get("Hours Authorized"),
+                    "hours_taken": record.get("Hours Taken"),
+                    "range_from": record.get("Range From"),
+                    "range_to": record.get("Range To"),
                 }
             )
     else:

@@ -1,26 +1,22 @@
 {
     "key_properties": [
         "employee_id",
-        "counter_date",
-        "counter_name"
+        "range_from",
+        "transaction_type"
     ],
     "properties": {
         "employee_id":  {"type": "string"},
+        "badge":  {"type": "string"},
         "first_name":  {"type": "string"},
         "last_name":  {"type": "string"},
-        "last_first_name":  {"type": "string"},
-        "pay_group":  {"type": "string"},
-        "counter_date":  {"type": "string"},
-        "counter_hours":  {"type": "string"},
-        "counter_quantity":  {"type": "string"},
-        "counter_name":  {"type": "string"},
-        "counter_description":  {"type": "string"},
-        "counter_code":  {"type": "string"},
-        "cost_center_full_path":  {"type": "string"},
-        "teams_full_path":  {"type": "string"},
-        "job_full_path":  {"type": "string"},
-        "time_off_name":  {"type": "string"},
-        "primary_email":  {"type": "string"},
-        "accrual_profile":  {"type": "string"}
+        "in_payroll":  {"type": "string"},
+        "locked":  {"type": "string"},
+        "employee_status":  {"type": "string"},
+        "time_off":  {"type": "string"},
+        "transaction_type":  {"type": "string"},
+        "hours_authorized":  {"type": "string"},
+        "hours_taken":  {"type": "string"},
+        "range_from":  {"type": "string"},
+        "range_to":  {"type": "string"}
     }
 }
